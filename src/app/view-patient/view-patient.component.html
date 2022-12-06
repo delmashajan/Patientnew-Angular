@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row mt-4">
+        <table class="table">
+            <thead>
+              <tr>
+                <!---<th scope="col">ID</th>-->
+                <th scope="col">Patient Name</th>
+                <th scope="col">Patient Mobile</th>
+                <th scope="col">Appointment Date</th>
+                <th scope="col">Doctor Name</th>
+                
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor = "let i of patient">
+                
+                <!---<td>{{i._id}}</td>---->
+                <td>{{i.patientname}}</td>
+                <td>{{i.patientmobile}}</td>
+                <td>{{i.appointmentdate}}</td>
+                <td>{{i.doctorname}}</td>
+                
+                
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+</div>
